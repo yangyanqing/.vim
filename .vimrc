@@ -4,7 +4,7 @@ set tabstop=4
 set softtabstop=4
 set shiftwidth=4
 set expandtab
-set smarttab
+" set smarttab
 set cindent
 set ai
 set ignorecase
@@ -13,7 +13,9 @@ set incsearch
 set hlsearch
 set enc=utf-8
 set fenc=utf-8
-" colorscheme darkblue
+syntax on
+filetype plugin on
+" colorscheme evening
 
 " F2 保存文件
 map <F2> <Esc>:w!<CR>
@@ -25,10 +27,6 @@ let NERDChristmasTree = 1
 let NERDTreeWinPos = "left"
 map <F8> <Esc>:NERDTree<CR>
 imap <F8> <Esc>:NERDTree<CR>
-
-" F9 运行 ruby 脚本
-map <F9> :!ruby % <CR>
-imap <F9> :!ruby % <CR>
 
 " 在不同的窗口移动
 map <C-j> <C-W>j
